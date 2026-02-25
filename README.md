@@ -1,16 +1,58 @@
-# React + Vite
+# TypeSpeedTest
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, interactive typing speed test built with **React**. Track your typing speed (WPM), accuracy, character stats, and even your key usage heatmap. Includes **daily tasks**, **streaks**, and **personal best tracking** with a clean light/dark theme toggle.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## React Compiler
+- [Demo](#demo)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Daily Tasks & Streaks](#daily-tasks--streaks)
+- [Customization](#customization)
+- [License](#license)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Typing Test Screenshot](screenshot.png)  
+*Your screenshot here – show the main typing screen with heatmap and stats.*
+
+---
+
+## Features
+
+- **Typing Levels:** Easy, Medium, and Hard with random sentences.
+- **Typing Stats:**  
+  - Words per minute (WPM)  
+  - Accuracy (%)  
+  - Total characters typed
+- **Key Heatmap:** Shows how often each key is used and highlights errors.
+- **Daily Tasks:** Complete specific goals like achieving a certain WPM or finishing a hard-level test.
+- **Streaks:** Track consecutive days of typing.
+- **Personal Best Tracking:** Pop-up notification when you beat your previous WPM record.
+- **Light/Dark Theme Toggle**
+- **Responsive Design:** Works on desktops and mobile devices.
+- **Progress Bar:** Shows progress through the current sentence.
+
+---
+
+## Technologies
+
+- **React** (Functional Components + Hooks)
+- **Tailwind CSS** for styling
+- Browser `localStorage` for persistence
+
+---
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/typespeedtest.git
+cd typespeedtest
