@@ -1,0 +1,23 @@
+{
+    "easy":{
+        "sentence1": "The cat is on the roof.",
+        "sentence2": "Pack my box with five dozen liquor jugs.",
+        "sentence3": "How vexingly quick daft zebras jump!",
+        "sentence4": "The five boxing wizards jump quickly.",
+        "sentence5": "Sphinx of black quartz, judge my vow."
+    },
+    "medium":{
+        "sentence1": "The quick brown fox jumps over the lazy dog.",
+        "sentence2": "She sells seashells by the seashore.",
+        "sentence3": "Peter Piper picked a peck of pickled peppers.",
+        "sentence4": "How can a clam cram in a clean cream can?",
+        "sentence5": "I scream, you scream, we all scream for ice cream."
+    },
+    "hard":{
+        "sentence1": "The sixth sick sheik's sixth sheep's sick.",
+        "sentence2": "The seething sea ceaseth and thus the seething sea sufficeth us.",
+        "sentence3": "Six slippery snails slid slowly seaward.",
+        "sentence4": "The big black bug bit the big black bear and made the big black bear bleed blood.",
+        "sentence5": "How can a clam cram in a clean cream can?"
+    }
+}
