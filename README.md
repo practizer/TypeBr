@@ -19,8 +19,8 @@ A modern, interactive typing speed test built with **React**. Track your typing 
 
 ## Demo
 
-![Typing Test Screenshot](screenshot.png)  
-*Your screenshot here – show the main typing screen with heatmap and stats.*
+<img width="729" height="961" alt="image" src="https://github.com/user-attachments/assets/98e519b3-ee0a-4772-9534-709e25e4d1a1" />
+
 
 ---
 
