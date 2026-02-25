@@ -6,6 +6,7 @@ import { useTimer } from '../hooks/useTimer'
 import { useHighScore } from '../hooks/useHighScore'
 import { useDailyTasks } from '../hooks/useDailyTasks'
 import { useKeyStats } from '../hooks/useKeyStats'
+import { useSoundEffects } from '../hooks/useSoundEffects'
 import { SENTENCES_DATA } from '../constants/sentences'
 import { calculateWPM, calculateAccuracy } from '../utils/calculations'
 
@@ -15,6 +16,7 @@ function TypeSpeedTest() {
   const { highestWPM, previousHighestWPM, streak, showBeatPopup, setShowBeatPopup, newWPM, checkAndUpdateWPM, updateStreak } = useHighScore()
   const { dailyTasks, taskToasts, setTaskToasts, checkDailyTasks, completedCount } = useDailyTasks()
   const { keyStats, trackKeyPress, resetKeyStats } = useKeyStats()
+  const { playCorrectSound, playWrongSound } = useSoundEffects()
 
   // Local State
   const [level, setLevel] = useState(null)
@@ -68,6 +70,13 @@ function TypeSpeedTest() {
     const isSpace = isSpaceKey
     const expectedChar = sampleText[input.length]
     const typedChar = isSpace ? ' ' : e.key
+
+    // Play sound effect
+    if (expectedChar === typedChar) {
+      playCorrectSound()
+    } else {
+      playWrongSound()
+    }
 
     trackKeyPress(isSpace, expectedChar, typedChar)
   }
